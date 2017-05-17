@@ -1,0 +1,35 @@
+{
+  "name": "latino",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "node node_modules/gulp/bin/gulp.js",
+    "build": "node node_modules/gulp/bin/gulp.js build"
+  },
+  "dependencies": {
+    "browserify": "^13.1.0",
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-filter": "^3.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-jade-find-affected": "^0.2.2",
+    "gulp-minify-inline": "^0.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "devDependencies": {
+    "finalhandler": "^0.5.0",
+    "serve-static": "^1.11.1"
+  }
+}

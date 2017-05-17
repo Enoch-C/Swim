@@ -1,0 +1,165 @@
+html {
+  font-family: "Helvetica Neue", "Luxi Sans", Tahoma, "Hiragino Sans GB", STHeiti; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+@-webkit-keyframes swim {
+  50% {
+    background-image: url(/img/man-2.png); }
+  100% {
+    background-image: url(/img/man-1.png); } }
+
+@keyframes swim {
+  50% {
+    background-image: url(/img/man-2.png); }
+  100% {
+    background-image: url(/img/man-1.png); } }
+
+@-webkit-keyframes slidedown {
+  0% {
+    top: -5%; }
+  100% {
+    top: 100%;
+    display: none; } }
+
+@keyframes slidedown {
+  0% {
+    top: -5%; }
+  100% {
+    top: 100%;
+    display: none; } }
+
+#container {
+  width: 100%;
+  height: 100%; }
+  #container .hide {
+    display: none; }
+  #container .stage {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; }
+  #container .stage-1 {
+    background: url(/img/cover.png) center no-repeat;
+    background-size: cover; }
+    #container .stage-1 .button {
+      width: 25%;
+      position: absolute;
+      bottom: 20%; }
+    #container .stage-1 .button-rule {
+      left: 10%; }
+    #container .stage-1 .button-play {
+      right: 10%; }
+    #container .stage-1 .rules {
+      width: 90%;
+      display: block;
+      margin: auto;
+      padding-right: 20px;
+      transition: all 0.2s linear;
+      transform: scale(0.8);
+      opacity: 0; }
+    #container .stage-1 .rules-close {
+      position: absolute;
+      top: 14%;
+      right: 17%;
+      width: 8%;
+      height: 5%; }
+    #container .stage-1 .rules-show {
+      transform: scale(1);
+      opacity: 1; }
+  #container .stage-2 {
+    background: url(/img/swimpool.png) center no-repeat;
+    background-size: cover; }
+    #container .stage-2 .cube {
+      width: 20%;
+      height: 12%;
+      position: absolute;
+      top: 10%;
+      text-align: center;
+      z-index: 2; }
+      #container .stage-2 .cube img {
+        width: 100%; }
+      #container .stage-2 .cube .num {
+        position: relative;
+        margin: -52% auto;
+        font-size: 20px; }
+    #container .stage-2 .time {
+      left: 2%; }
+    #container .stage-2 .distance {
+      right: 3%; }
+    #container .stage-2 .man {
+      background: url(/img/man-1.png) center no-repeat;
+      background-size: 100%;
+      width: 25%;
+      height: 30%;
+      position: absolute;
+      bottom: 0;
+      left: 37%;
+      animation: 2s swim infinite;
+      transition: all 0.2s ease; }
+    #container .stage-2 .arrow {
+      position: absolute;
+      bottom: 9%;
+      margin-left: -8px;
+      cursor: pointer;
+      z-index: 2; }
+    #container .stage-2 .arrow-left {
+      width: 25%;
+      left: 8%; }
+    #container .stage-2 .arrow-right {
+      width: 23.5%;
+      right: 5%; }
+    #container .stage-2 .obs {
+      position: absolute;
+      width: 20%;
+      top: -5%;
+      animation: 6s slidedown 1 linear; }
+    #container .stage-2 .rpos-1 {
+      left: 6%; }
+    #container .stage-2 .rpos-2 {
+      left: 39%; }
+    #container .stage-2 .rpos-3 {
+      left: 72%; }
+  #container .stage-3 {
+    background: url(/img/swimpool.png) center no-repeat;
+    background-size: cover; }
+    #container .stage-3 .end {
+      width: 96%;
+      display: block;
+      margin: auto;
+      padding-right: 10px;
+      transition: all 0.25s linear;
+      transform: scale(0.8);
+      opacity: 0; }
+    #container .stage-3 .count {
+      font-size: 25px;
+      position: relative;
+      margin-top: -136%;
+      text-align: center;
+      transition: all 0.25s linear;
+      transform: scale(0.8);
+      opacity: 0; }
+    #container .stage-3 .end-show {
+      transform: scale(1);
+      opacity: 1; }
+    #container .stage-3 .button {
+      width: 30%;
+      height: 10%;
+      position: absolute;
+      bottom: 40%;
+      cursor: pointer; }
+    #container .stage-3 .button-share {
+      left: 20%; }
+    #container .stage-3 .button-replay {
+      right: 20%; }
+    #container .stage-3 .share {
+      background: url(/img/share.png) center no-repeat;
+      background-size: cover;
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+      top: 0; }

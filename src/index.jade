@@ -1,0 +1,29 @@
+extends include/layout
+block content
+  #container
+    section.stage.stage-1
+      img.rules(src="/img/rules.png")
+      img.button.button-rule(src="/img/b-rule.png")
+      img.button.button-play(src="/img/b-play.png")
+      .rules-close
+    section.stage.stage-2.hide
+      .cube.time
+        img(src="/img/time.png")
+        .num 0
+      .cube.distance
+        img(src="/img/distance.png")
+        .num 0
+      .man
+      img.arrow.arrow-left(src="/img/arrow-left.png")
+      img.arrow.arrow-right(src="/img/arrow-right.png")
+      .obss
+    section.stage.stage-3.hide
+      .total
+      img.end(src="/img/end.png")
+      .count
+      .button.button-share
+      .button.button-replay
+      .share
+block script
+  script(src="/js/jquery-3.1.0.min.js")
+  script(src="/js/swim.js")
